@@ -1,0 +1,109 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-11T02:20:22.893Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2956522025,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Account summary page should have cash Account, Investment Accounts, Credit Accounts, Loan Accounts.",
+        "description": "",
+        "id": "accout-summary;account-summary-page-should-have-cash-account--investment-accounts--credit-accounts--loan-accounts.",
+        "after": [
+          {
+            "result": {
+              "duration": 2111776863,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 417458656,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user logged in",
+            "match": {
+              "location": "AccountSummaryStepDeffinations.the_user_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 71503553,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user should see the fallowing account types",
+            "match": {
+              "location": "AccountSummaryStepDeffinations.the_user_should_see_the_fallowing_account_types(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Cash Accounts"
+                ]
+              },
+              {
+                "cells": [
+                  "Investment Accounts"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit Accounts"
+                ]
+              },
+              {
+                "cells": [
+                  "Loan Accounts"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@account_summary"
+          },
+          {
+            "name": "@account_types"
+          }
+        ]
+      }
+    ],
+    "name": "Accout summary",
+    "description": "",
+    "id": "accout-summary",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AccountSummary.feature",
+    "tags": [
+      {
+        "name": "@account_summary",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
